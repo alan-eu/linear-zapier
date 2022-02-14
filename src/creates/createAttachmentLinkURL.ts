@@ -98,9 +98,9 @@ interface createAttachmentLinkURLRequestResponse {
           },
           {
             required: true,
-            label: "ConversationId",
-            helpText: "The ID of the conversation",
-            key: "conversation",
+            label: "url",
+            helpText: "The URL of the attachment",
+            key: "url",
           },
         ],
         sample: { data: { success: true } },
