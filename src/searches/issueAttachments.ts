@@ -29,6 +29,9 @@ interface issueAttachmentsRequestResponse {
           attachments {
             nodes {
               metadata
+              title
+              subtitle
+              url
             }
           }
         }
