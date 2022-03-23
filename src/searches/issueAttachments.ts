@@ -28,6 +28,10 @@ interface issueAttachmentsRequestResponse {
           }
           attachments {
             nodes {
+              id,
+              url,
+              title,
+              subtitle,
               metadata
             }
           }
@@ -68,23 +72,23 @@ interface issueAttachmentsRequestResponse {
         throw new z.errors.Error(`Failed to create an attachment ${JSON.stringify(data)}`, "", 400);
       }
     };
-  
+
 
     export const issueAttachments = {
       key: "issue_attachments",
-    
+
       display: {
         hidden: false,
         important: true,
         description: "Get the attachments of an issue",
         label: "Get the attachments of an issue",
       },
-    
+
       noun: "issueAttachments",
-    
+
       operation: {
         perform: issueAttachmentsRequest,
-    
+
         inputFields: [
           {
             required: true,
@@ -96,4 +100,3 @@ interface issueAttachmentsRequestResponse {
         sample: { data: { success: true } },
       },
     };
-    
