@@ -28,6 +28,7 @@ const issueAttachmentsRequest = async (z: ZObject, bundle: Bundle) => {
           attachments {
             nodes {
               id,
+              url,
               title,
               subtitle,
               metadata
