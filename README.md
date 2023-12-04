@@ -1,3 +1,7 @@
+# DEPRECATED
+
+Please see relevant monorepo directory  https://github.com/alan-eu/alan-apps/blob/master/backend/apps/eu_tools/eng_oncall_management
+
 # linear-zapier
 
 Linear's Zapier application.
